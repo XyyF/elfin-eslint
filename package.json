@@ -4,8 +4,8 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue",
-		"lint.fix": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue --fix"
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint.fix": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue --fix"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,15 @@
   "bugs": {
     "url": "https://github.com/XyyF/elfin-eslint/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "homepage": "https://github.com/XyyF/elfin-eslint#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.14.0"
+    "eslint": "^7.14.0",
+    "husky": "^4.3.0"
   }
 }
