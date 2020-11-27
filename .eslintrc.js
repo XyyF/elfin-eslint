@@ -15,6 +15,10 @@ module.exports = {
 	},
 	parser: 'babel-eslint',
 	rules: {
+    /**
+     * 不要在中括号中添加空格
+     */
+    'array-bracket-spacing': ['error', 'never'],
 		/**
 		 * 要求打开的块标志和同一行上的标志拥有一致的间距。此规则还会在同一行关闭的块标记和前边的标记强制实施一致的间距。
 		 */
@@ -26,14 +30,14 @@ module.exports = {
 		/**
 		 * 使用驼峰命名法（camelCase）命名对象、函数和实例。
 		 */
-		camelcase: ['error', {
-			ignoreDestructuring: true,
-			properties: 'never'
+		'camelcase': ['error', {
+      'ignoreDestructuring': true,
+			'properties': 'never'
 		}],
 		/**
 		 * 强制在逗号前后使用一致的空格
 		 */
-		'comma-spacing': ['error', { before: false, after: true }],
+		'comma-spacing': ['error', { 'before': false, 'after': true }],
 		/**
 		 * 强制使用一致的逗号风格
 		 */
@@ -56,7 +60,7 @@ module.exports = {
 		'keyword-spacing': [
 			'error',
 			{
-				overrides: {
+				'overrides': {
 					if: { after: true },
 					for: { after: true },
 					while: { after: true },
@@ -106,6 +110,10 @@ module.exports = {
      * 禁止重复定义类的成员
      */
     'no-dupe-class-members': 'error',
+    /**
+     * 禁止重复导入模块
+     */
+    'no-duplicates': 'error',
     /**
      * 禁止使用 eval
      */
@@ -205,11 +213,18 @@ module.exports = {
     /**
      * 要加分号
      */
-    semi: ['error', 'always'],
+    'semi': ['error', 'always'],
     /**
      * 强制在块之前使用一致的空格
      */
     'space-before-blocks': 'error',
+    /**
+     * 强制在 function 的左括号之前使用一致的空格
+     */
+    'space-before-function-paren': [
+      'error',
+      { anonymous: 'always', named: 'never', asyncArrow: 'always' }
+    ],
     /**
      * 强制在圆括号内使用一致的空格
      */
