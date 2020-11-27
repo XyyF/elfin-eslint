@@ -13,7 +13,7 @@ module.exports = {
 ## package.json
 
 ```js
-npm install eslint babel-eslint husky --save-dev
+npm install eslint babel-eslint husky eslint-plugin-import --save-dev
 
 {
   "scripts": {

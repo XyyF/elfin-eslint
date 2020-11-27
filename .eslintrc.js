@@ -14,6 +14,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	parser: 'babel-eslint',
+  plugins: ['import'],
 	rules: {
     /**
      * 不要在中括号中添加空格
@@ -113,7 +114,7 @@ module.exports = {
     /**
      * 禁止重复导入模块
      */
-    'no-duplicates': 'error',
+    'import/no-duplicates': ['error', {'considerQueryString': true}],
     /**
      * 禁止使用 eval
      */
