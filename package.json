@@ -1,0 +1,23 @@
+{
+  "name": "elfin-eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XyyF/elfin-eslint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XyyF/elfin-eslint/issues"
+  },
+  "homepage": "https://github.com/XyyF/elfin-eslint#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0"
+  }
+}
