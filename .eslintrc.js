@@ -11,9 +11,9 @@ module.exports = {
 		ecmaFeatures: {
 			jsx: true
 		},
+    parser: 'babel-eslint',
 		sourceType: 'module'
 	},
-	parser: 'babel-eslint',
   plugins: ['import'],
 	rules: {
     /**
