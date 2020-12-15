@@ -36,8 +36,7 @@ module.exports = {
     'no-useless-constructor': 'off',
     quotes: 'off',
     semi: 'off',
-    'space-before-function-paren': 'off'
-    ,
+    'space-before-function-paren': 'off',
     /**
      * 重载的函数必须写在一起
      * @reason 增加可读性
