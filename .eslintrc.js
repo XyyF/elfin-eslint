@@ -1,74 +1,74 @@
 module.exports = {
-	env: {
-		browser: false,
-		commonjs: true,
-		es6: true,
-		node: true,
-		mocha: true
-	},
-	parserOptions: {
-		ecmaVersion: 2018,
-		ecmaFeatures: {
-			jsx: true
-		},
+  env: {
+    browser: false,
+    commonjs: true,
+    es6: true,
+    node: true,
+    mocha: true
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    ecmaFeatures: {
+      jsx: true
+    },
     parser: 'babel-eslint',
-		sourceType: 'module'
-	},
+    sourceType: 'module'
+  },
   plugins: ['import'],
-	rules: {
+  rules: {
     /**
      * 不要在中括号中添加空格
      */
     'array-bracket-spacing': ['error', 'never'],
-		/**
-		 * 要求打开的块标志和同一行上的标志拥有一致的间距。此规则还会在同一行关闭的块标记和前边的标记强制实施一致的间距。
-		 */
-		'block-spacing': 'error',
-		/**
-		 * 强制在代码块中使用一致的大括号风格
-		 */
-		'brace-style': 'error',
-		/**
-		 * 使用驼峰命名法（camelCase）命名对象、函数和实例。
-		 */
-		'camelcase': ['error', {
-      'ignoreDestructuring': true,
-			'properties': 'never'
-		}],
-		/**
-		 * 强制在逗号前后使用一致的空格
-		 */
-		'comma-spacing': ['error', { 'before': false, 'after': true }],
-		/**
-		 * 强制使用一致的逗号风格
-		 */
-		'comma-style': ['error', 'last'],
-		/**
-		 * 要求或禁止文件末尾存在空行
-		 */
-		'eol-last': ['error', 'always'],
-		/**
-		 * 要求或禁止在函数标识符和其调用之间有空格
-		 */
-		'func-call-spacing': ['error', 'never'],
-		/**
-		 * 强制在对象字面量的属性中键和值之间使用一致的间距
-		 */
-		'key-spacing': 'error',
-		/**
-		 * 强制在关键字前后使用一致的空格
-		 */
-		'keyword-spacing': [
-			'error',
-			{
-				'overrides': {
-					if: { after: true },
-					for: { after: true },
-					while: { after: true },
-					else: { after: true }
-				}
-			}
-		],
+    /**
+     * 要求打开的块标志和同一行上的标志拥有一致的间距。此规则还会在同一行关闭的块标记和前边的标记强制实施一致的间距。
+     */
+    'block-spacing': 'error',
+    /**
+     * 强制在代码块中使用一致的大括号风格
+     */
+    'brace-style': 'error',
+    /**
+     * 使用驼峰命名法（camelCase）命名对象、函数和实例。
+     */
+    camelcase: ['error', {
+      ignoreDestructuring: true,
+      properties: 'never'
+    }],
+    /**
+     * 强制在逗号前后使用一致的空格
+     */
+    'comma-spacing': ['error', { before: false, after: true }],
+    /**
+     * 强制使用一致的逗号风格
+     */
+    'comma-style': ['error', 'last'],
+    /**
+     * 要求或禁止文件末尾存在空行
+     */
+    'eol-last': ['error', 'always'],
+    /**
+     * 要求或禁止在函数标识符和其调用之间有空格
+     */
+    'func-call-spacing': ['error', 'never'],
+    /**
+     * 强制在对象字面量的属性中键和值之间使用一致的间距
+     */
+    'key-spacing': 'error',
+    /**
+     * 强制在关键字前后使用一致的空格
+     */
+    'keyword-spacing': [
+      'error',
+      {
+        overrides: {
+          if: { after: true },
+          for: { after: true },
+          while: { after: true },
+          else: { after: true }
+        }
+      }
+    ],
     /**
      * 强制一行的最大长度，限制单行不能超过100个字符，字符串和正则表达式除外。
      */
@@ -114,7 +114,7 @@ module.exports = {
     /**
      * 禁止重复导入模块
      */
-    'import/no-duplicates': ['error', {'considerQueryString': true}],
+    'import/no-duplicates': ['error', { considerQueryString: true }],
     /**
      * 禁止使用 eval
      */
@@ -214,7 +214,7 @@ module.exports = {
     /**
      * 要加分号
      */
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     /**
      * 强制在块之前使用一致的空格
      */
@@ -246,5 +246,5 @@ module.exports = {
      * 要求立即执行的函数使用括号括起来
      */
     'wrap-iife': ['error', 'outside'],
-	}
+  }
 };
