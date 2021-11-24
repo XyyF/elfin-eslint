@@ -1,8 +1,13 @@
-# elfin-eslint
+<h1 align="center">
+<br>
+  <a href="https://github.com/XyyF/XyyF"><img src="https://rengarxiao.com/XyyF/images/elfin.png" alt="elfin" width="100"></a>
+  <br>
+    <br>
+  elfin 统一的eslint配置
+  <br><br>
+</h1>
 
-elfin 统一的eslint配置
-
-## Usage
+### Usage
 
 ```js
 module.exports = {
@@ -14,11 +19,11 @@ module.exports = {
 };
 ```
 
-## Refs
+### Refs
 
 - eslint
 - babel-eslint
-- husky
+- husky@4.3.0
 - eslint-plugin-import
 - eslint-plugin-vue [可选] 针对.vue文件使用需要
 - typescript [可选] 针对.ts文件需要
@@ -27,16 +32,16 @@ module.exports = {
 
 ```js
 // .js
-npm install eslint babel-eslint husky eslint-plugin-import --save-dev
+npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import --save-dev
 
 // .vue
-npm install eslint babel-eslint husky eslint-plugin-import eslint-plugin-vue --save-dev
+npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import eslint-plugin-vue --save-dev
 
 // .ts
-npm install eslint babel-eslint husky eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
 ```
 
-## package.json
+### package.json
 
 ```js
 {
@@ -51,3 +56,7 @@ npm install eslint babel-eslint husky eslint-plugin-import typescript @typescrip
   },
 }
 ```
+
+### TODO
+
+- npm包体管理
