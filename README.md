@@ -11,34 +11,20 @@
 
 ```js
 module.exports = {
-  extends: ['../elfin-eslint/.eslintrc.js'],
+  extends: ['@elfiner/eslint-config-elfin'],
 };
 
 module.exports = {
-  extends: ['../elfin-eslint/.vue.eslintrc.js'],
+  extends: ['@elfiner/eslint-config-elfin/main/vue.eslintrc.js'],
 };
 ```
 
 ### Refs
 
-- eslint
-- babel-eslint
-- husky@4.3.0
-- eslint-plugin-import
-- eslint-plugin-vue [可选] 针对.vue文件使用需要
-- typescript [可选] 针对.ts文件需要
-- @typescript-eslint/parser [可选] 针对.ts文件需要
-- @typescript-eslint/eslint-plugin [可选] 针对.ts文件需要
+- @elfiner/eslint-config-elfin
 
 ```js
-// .js
-npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import --save-dev
-
-// .vue
-npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import eslint-plugin-vue --save-dev
-
-// .ts
-npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+npm install @elfiner/eslint-config-elfin --save-dev
 ```
 
 ### package.json
@@ -57,6 +43,14 @@ npm install eslint babel-eslint husky@4.3.0 eslint-plugin-import typescript @typ
 }
 ```
 
-### TODO
+## 参与研发
+```js
+npm link // npm链接本地项目
 
-- npm包体管理
+npm publish --access=public // 发布项目
+
+// 因taobao镜像源导致发布失败，可以先切换为npmjs源
+npm config set registry https://registry.npmjs.org/
+// 切换回
+npm config set http://registry.npm.taobao.org/
+```
