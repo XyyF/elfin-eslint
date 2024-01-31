@@ -28,7 +28,7 @@ module.exports = {
 typescript 还需要安装依赖
 
 ```shell
-tnpm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
 ```
 
 _.eslintrc.js:_
