@@ -9,37 +9,33 @@
 
 ### Usage
 
-```js
+安装:
+
+javascript
+
+```shell
+npm install eslint @elfiner/eslint-config-elfin --save-dev
+```
+
+_.eslintrc.js:_
+
+```javascript
 module.exports = {
   extends: ['@elfiner/eslint-config-elfin'],
-};
+}
+```
 
+typescript 还需要安装依赖
+
+```shell
+tnpm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+```
+
+_.eslintrc.js:_
+
+```javascript
 module.exports = {
-  extends: ['@elfiner/eslint-config-elfin/main/vue.eslintrc.js'],
-};
-```
-
-### Refs
-
-- @elfiner/eslint-config-elfin
-
-```js
-npm install @elfiner/eslint-config-elfin --save-dev
-```
-
-### package.json
-
-```js
-{
-  "scripts": {
-		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue",
-		"lint.fix": "eslint ./src --ext .js,.jsx,.ts,.tsx,.vue --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
+  extends: ['@elfiner/eslint-config-elfin', '@elfiner/eslint-config-elfin/ts'],
 }
 ```
 
